@@ -1,0 +1,77 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+section{
+  margin: 0;
+  padding: 0;
+}
+.profil_picture{
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+ 
+}
+
+.eray,a{
+  color:rgb(85, 85, 252);
+  
+}
+.image_skill{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin: 5px;
+}
+.imagesSlider{
+  width: 400px;
+  height: 200px;
+  border:0.5px solid rgba(211, 211, 211, 0.671);
+  object-fit:cover;
+}
+@media (max-width:760px) {
+  .profil_picture{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+ @media (max-width:760px) {
+  
+  .imagesSlider{
+    width: 100%;
+  }
+} 
+.image_email_contact{
+  width: 80px;
+  height: 80px;
+}
+.image_wtp_contact{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.freecodecamp_image{
+  width: 100px;
+  height: 100px;
+  object-fit:cover;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  color: rgb(182, 182, 182);
+}
+.award{
+  width: 95%;
+  height: 500px;
+  background:rgb(211, 211, 252);
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 49% 100%, 0 81%);
+  color: rgb(62, 62, 179);
+}
