@@ -1,27 +1,31 @@
 
-*{
+
+/* Supprime les marges par défaut du body */
+body, html {
   margin: 0;
   padding: 0;
+  
+  
 }
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+
+
+.flex{
+display: flex;
+
 }
-section{
-  margin: 0;
-  padding: 0;
-}
+
 .profil_picture{
+  background-color: rgba(55, 55, 56, 0.747);
   width: 300px;
   height: 300px;
+  
   border-radius: 10px;
   object-fit: cover;
  
 }
 
 .eray,a{
-  color:rgb(85, 85, 252);
+  color:#1976d2;
   
 }
 .image_skill{
@@ -73,5 +77,5 @@ section{
   height: 500px;
   background:rgb(211, 211, 252);
   clip-path: polygon(0 0, 100% 0, 100% 78%, 49% 100%, 0 81%);
-  color: rgb(62, 62, 179);
+  color: #1976d2;
 }

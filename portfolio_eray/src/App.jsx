@@ -2,7 +2,7 @@ import './App.css'
 import { Box, Stack,Button,Typography, duration} from '@mui/material'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn,faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faHouse ,faUser,faLaptopCode,faAward,faPhone,faSuitcase} from '@fortawesome/free-solid-svg-icons';
+import { faHouse ,faUser,faLaptopCode,faAward,faPhone,faSuitcase,faBars} from '@fortawesome/free-solid-svg-icons';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react';
@@ -29,7 +29,8 @@ function App() {
   const workRef = useRef(null);
   const awardRef = useRef(null)
   const contactRef = useRef(null)
-
+  const menuRef = useRef(null)
+  
   const scrollToSection = (homeRef,aboutRef,skillsRef,workRef) => {
     homeRef.current.scrollIntoView({ behavior: 'smooth' });
     aboutRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -38,173 +39,122 @@ function App() {
     awardRef.current.scrollIntoView({ behavior: 'smooth' });
     contactRef.current.scrollIntoView({ behavior: 'smooth' });
   }
-
+ 
+ const menu_deroulant = () => {
+  if (menuRef.current) {
+    menuRef.current.style.marginLeft = menuRef.current.style.marginLeft === '0px' ? '-400px' : '0px';
+  }
+};
   const emailAddress = 'eraymutabesha4@gmail.com'; 
 
 
-
-  
-
-  
-
   return (
     
-    
+    <>
       
-      <Box sx={{ 
-        display:"flex",
-        justifyContent:"space-between",
-        with:"",
-        
-        textAlign:"left"
+      <div className='flex'>
       
-      }}>
-        
 {/* ............................one one one one................................. */}
-        <Box sx={{
-          background:"rgba(85, 85, 252)",
+        <Box ref={menuRef} sx={{
+        
+         background: "#1976d2",
+          
+          width:"160px",
+          color:"white",
           height:"100vh",
           position:"fixed",
-          width:"150px",
-          color:"white",
-          zIndex:"10",
+          display:"grid",
+          zIndex:"20",
+          transition:"0.5s",
+          marginLeft: {
+            xs: "-400px",
+            md: "0px"
+          },
           
-          // .........................responsivite.....................
-          display: {
-            xs: "none",
-            md: "grid"
-          }
         }}>
 
           <Box sx={{ 
           display:"grid",
-         
           margin:"5px auto",
           width:"fit-content",
           marginTop:"100px"
           
           }}>
           
-             <Stack onClick={() => scrollToSection(homeRef)} direction="row" spacing={1} sx={{
-              
-               padding:"10px",
-               height:"fit-content",
-               transition:"1s",
-               borderRadius:"7PX",
-               color:"white",
-               '&:hover': {
-                border:"0.5px solid rgba(211, 211, 211, 0.671)",
-                 boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
-                 cursor:"pointer"
-               },
-             }}>
-             <FontAwesomeIcon icon={faHouse} /> 
-             <Typography >Home</Typography>
-             </Stack>
-            
-        
-             <Stack onClick={() => scrollToSection(aboutRef)}  direction="row" spacing={1}  sx={{
              
-               padding:"10px",
-               height:"fit-content",
-               transition:"1s",
-               borderRadius:"7PX",
-               color:"white",
-               '&:hover': {
-                border:"0.5px solid rgba(211, 211, 211, 0.671)",
-                 boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
-                 cursor:"pointer"
-               },
-             }}><FontAwesomeIcon icon={faUser }/>
-             <Typography>About</Typography>
-             </Stack>
-         
-          
-             <Stack onClick={() => scrollToSection(skillsRef)}  direction="row" spacing={1}  sx={{
-               padding:"10px",
-               height:"fit-content",
-               transition:"1s",
-               borderRadius:"7PX",
-               '&:hover': {
-                border:"0.5px solid rgba(211, 211, 211, 0.671)",
-                 boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
-                 cursor:"pointer"
-               },
-             }}><FontAwesomeIcon icon={faLaptopCode }/>
-             <Typography>Skills</Typography>
-             </Stack>
+             <Button onClick={() => scrollToSection(homeRef)}  variant="contained" size="medium" sx={{
+              height:"fit-content",
+              background:"#1565c0" }}>
+              <Typography><FontAwesomeIcon icon={faHouse} /> Home</Typography>
+              </Button>
+             
+              <Button onClick={() => scrollToSection(aboutRef)}  variant="contained" size="medium" sx={{
+              height:"fit-content",
+              background:"#1565c0" }}>
+              <Typography><FontAwesomeIcon icon={faUser }/> About</Typography>
+              </Button>
 
-             <Stack onClick={() => scrollToSection(workRef)} direction="row" spacing={1}  sx={{
-               padding:"10px",
-               height:"fit-content",
-               transition:"1s",
-               borderRadius:"7PX",
-               '&:hover': {
-                border:"0.5px solid rgba(211, 211, 211, 0.671)",
-                 boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
-                 cursor:"pointer"
-               },
-             }}><FontAwesomeIcon icon={faSuitcase }/>
-             <Typography>Work</Typography>
-             </Stack>
-         
-             <Stack onClick={() => scrollToSection(awardRef)}   direction="row" spacing={1}  sx={{
-               padding:"10px",
-               height:"fit-content",
-               transition:"1s",
-               borderRadius:"7PX",
-               '&:hover': {
-                border:"0.5px solid rgba(211, 211, 211, 0.671)",
-                 boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
-                 cursor:"pointer"
-               },
-             }}><FontAwesomeIcon icon={faAward }/>
-             <Typography>Award</Typography>
-             </Stack>
-         
-             <Stack onClick={() => scrollToSection(contactRef)}  direction="row"  spacing={1}  sx={{
-               padding:"10px",
-               height:"fit-content",
-               transition:"1s",
-               borderRadius:"7PX",
-               '&:hover': {
-                border:"0.5px solid rgba(211, 211, 211, 0.671)",
-                 boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
-                 cursor:"pointer"
-               },
-             }}><FontAwesomeIcon icon={faPhone }/>
-             <Typography>Contact</Typography>
-             </Stack>
-          
-          
-            
-          
+              <Button onClick={() => scrollToSection(skillsRef)} variant="contained" size="medium" sx={{
+              height:"fit-content",
+              background:"#1565c0" }}>
+              <Typography><FontAwesomeIcon icon={faLaptopCode }/> Skills</Typography>
+              </Button>
+
+              <Button onClick={() => scrollToSection(workRef)} variant="contained" size="medium" sx={{
+              height:"fit-content",
+              background:"#1565c0" }}>
+              <Typography><FontAwesomeIcon icon={faSuitcase }/> Work</Typography>
+              </Button>
+
+              <Button onClick={() => scrollToSection(awardRef)} variant="contained" size="medium" sx={{
+              height:"fit-content",
+              background:"#1565c0" }}>
+              <Typography><FontAwesomeIcon icon={faAward }/> Award</Typography>
+              </Button>
+
+              <Button onClick={() => scrollToSection(contactRef)} variant="contained" size="medium" sx={{
+              height:"fit-content",
+              background:"#1565c0" }}>
+              <Typography><FontAwesomeIcon icon={faPhone }/> Contact</Typography>
+              </Button>
+
+              
+        
+
           </Box>
         </Box>
-
-        <Box sx={{
+      {/* twooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */}
+        <Box  sx={{
         
-           
-           
-          width:{
-            xs:"100%",
-            md:"93%"
-          },
-          marginLeft:{
-            xs: "0px",
-            md: "150px"
-          },
+           width:{
+              xs:"100%",
+             md:"100%",
+           },
+             marginLeft:{
+             xs: "0px",
+            md: "160px"
+           },
           zIndex:"10"
         }}>
-
+       <Box sx={{
+          marginTop:"0px",
+          height:"fit-content",
+          right:"10px",
+          zIndex:"30",
+          padding:"5px",
+          fontSize:"30px",
+          position:"fixed",
+          display: {
+            xs: "flex",
+            md: "none"
+          },
+        }}>
+          <FontAwesomeIcon icon={faBars} onClick={menu_deroulant}/> 
+        </Box>
 
           
           {/* ....................................eray home....................................................... */}
-          <Box  sx={{
          
-        
-          
-        }}>
      
      
      
@@ -309,7 +259,7 @@ function App() {
 
         {/* .........................ABOUT ................................................................. */}
         <Box ref={aboutRef} sx={{
-          margin:"20px ",
+          margin:"40px ",
           border:"1px solid white"}}>
 
         <Box 
@@ -338,7 +288,7 @@ function App() {
        
 
 
-  <Box sx={ {border:"1px solid white",margin:"20px ",}} ref={skillsRef}>
+  <Box sx={ {border:"1px solid white",margin:"40px ",}} ref={skillsRef}>
 
         <Typography variant="h4" mt={15} >STACK & DAILY USED TOOLS</Typography>
 
@@ -547,7 +497,7 @@ function App() {
 {/* ........................................PROJECTS......................................................... */}
         
 <Box ref={workRef} sx={{
-  margin:"20px ",
+  margin:"40px ",
   textAlign:"justify"
 
 }}>
@@ -765,7 +715,7 @@ function App() {
       <Box ref={contactRef}  sx={{
     
     
-    margin:"20px ",
+    margin:"40px ",
    }}>
       <Typography variant="h4"  >CONTACT</Typography>
         <Typography variant="h5" mt={5} sx={{color:"rgba(92, 91, 91, 0.678)"}}>Get in Touch</Typography>
@@ -787,7 +737,7 @@ function App() {
         }}>
 
           <Box sx={{border:"0.5px solid rgba(211, 211, 211, 0.671)",
-            borderRadius:"5PX",
+            borderRadius:"10PX",
             width:{
               xs:"95%",
               ss:"45%"
@@ -810,7 +760,7 @@ function App() {
 
           <Box sx={{
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
-            borderRadius:"5PX",
+            borderRadius:"10PX",
             width:{
               xs:"95%",
               ss:"45%"
@@ -842,7 +792,7 @@ function App() {
           <Box sx={{
             
             background:"rgba(3, 3, 3, 0.767)",
-            
+            width:"100%"
             }}>
 
 
@@ -884,12 +834,11 @@ function App() {
 
 
           </Box>
-        </Box>
+        
         
       </Box>
-      </Box>
-      //........................................END OF FOOTER.............................. */}
-      
+      </div>
+      </>
      
   )
 }
