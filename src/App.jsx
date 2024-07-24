@@ -175,7 +175,7 @@ function App() {
           gap:"100px"
         }}>
        
-             <img src='/public/ErayProfil.jpg' className='profil_picture'/>
+             <img src='/ErayProfil.jpg' className='profil_picture'/>
 
              <Box  data-aos="zoom-in" sx={{
               alignItems:"center",
@@ -311,7 +311,7 @@ function App() {
              },
           }}>
             
-            <img src='/public/javascriptImage.png' alt='logo' className='image_skill'/>
+            <img src='/javascriptImage.png' alt='logo' className='image_skill'/>
             <Typography >javascript</Typography>
 
           </Box>
@@ -328,7 +328,7 @@ function App() {
             },
          }}>
 
-           <img src='/public/reactimage.png' alt='logo' className='image_skill'/>
+           <img src='/reactimage.png' alt='logo' className='image_skill'/>
            <Typography>React js</Typography>
 
          </Box>
@@ -345,7 +345,7 @@ function App() {
             },
          }}>
 
-           <img src='/public/nodejsimage.png' alt='logo' className='image_skill'/>
+           <img src='/nodejsimage.png' alt='logo' className='image_skill'/>
            <Typography >Node js</Typography>
 
          </Box>
@@ -365,7 +365,7 @@ function App() {
             },
           
          }}>
-           <img src='/public/materialui.png' alt='logo' className='image_skill'/>
+           <img src='/materialui.png' alt='logo' className='image_skill'/>
            <Typography >MaterialUI</Typography>
          </Box> 
 
@@ -384,7 +384,7 @@ function App() {
             },
           
          }}>
-           <img src='/public/SQLiteimage.png' alt='logo' className='image_skill'/>
+           <img src='/SQLiteimage.png' alt='logo' className='image_skill'/>
            <Typography >Sqlite</Typography>
          </Box>
 
@@ -405,7 +405,7 @@ function App() {
             },
           
          }}>
-           <img src='/public/htmlimage.png' alt='logo' className='image_skill'/>
+           <img src='/htmlimage.png' alt='logo' className='image_skill'/>
            <Typography >HTML</Typography>
          </Box>
          <Box 
@@ -425,7 +425,7 @@ function App() {
             },
          }}>
 
-           <img src='/public/sassimage.png' alt='logo' className='image_skill'/>
+           <img src='/sassimage.png' alt='logo' className='image_skill'/>
            <Typography >Sass</Typography>
 
          </Box>
@@ -445,7 +445,7 @@ function App() {
             },
          }}>
 
-           <img src='/public/git.png' alt='logo' className='image_skill'/>
+           <img src='/git.png' alt='logo' className='image_skill'/>
            <Typography >Git</Typography>
 
          </Box>
@@ -462,7 +462,7 @@ function App() {
             },         
          }}>
 
-           <img src='/public/css3image.png' alt='logo' className='image_skill'/>
+           <img src='/css3image.png' alt='logo' className='image_skill'/>
            <Typography >Css</Typography>
 
          </Box>
@@ -479,7 +479,7 @@ function App() {
             },
          }}>
 
-           <img src='/public/figma.jpg' alt='logo' className='image_skill'/>
+           <img src='/figma.jpg' alt='logo' className='image_skill'/>
            <Typography >Figma</Typography>
 
          </Box>
@@ -575,7 +575,7 @@ function App() {
             }}>
               
               <Box>
-              <img src='/public/images.png' alt='image' className='freecodecamp_image'/>
+              <img src='/images.png' alt='image' className='freecodecamp_image'/>
               <Typography>Web developement</Typography>
               </Box>
               <Box sx={{
@@ -602,7 +602,7 @@ function App() {
             }}>
               
               <Box>
-              <img src='/public/images.png' alt='image' className='freecodecamp_image'/>
+              <img src='/images.png' alt='image' className='freecodecamp_image'/>
               <Typography>JS algorithms and...</Typography>
               </Box>
               <Box sx={{
@@ -629,7 +629,7 @@ function App() {
             }}>
               
               <Box>
-              <img src='/public/images.png' alt='image' className='freecodecamp_image'/>
+              <img src='/images.png' alt='image' className='freecodecamp_image'/>
               <Typography>JS algorithms and...</Typography>
               </Box>
               <Box sx={{
@@ -656,7 +656,7 @@ function App() {
             }}>
               
               <Box>
-              <img src='/public/images.png' alt='image' className='freecodecamp_image'/>
+              <img src='/images.png' alt='image' className='freecodecamp_image'/>
               <Typography>JS algorithms and...</Typography>
               </Box>
               <Box sx={{
@@ -683,7 +683,7 @@ function App() {
             }}>
               
               <Box>
-              <img src='/public/images.png' alt='image' className='freecodecamp_image'/>
+              <img src='/images.png' alt='image' className='freecodecamp_image'/>
               <Typography>JS algorithms and...</Typography>
               </Box>
               <Box sx={{
