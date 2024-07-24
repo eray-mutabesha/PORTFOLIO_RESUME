@@ -14,6 +14,11 @@
     "@emotion/styled": "^11.13.0",
     "@eslint/config-array": "^0.17.1",
     "@eslint/object-schema": "^2.1.4",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-regular-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@mui/material": "^5.16.4",
     "@tsparticles/engine": "^3.5.0",
     "@tsparticles/react": "^3.0.0",
@@ -23,6 +28,7 @@
     "react-dom": "^18.3.1",
     "react-particles": "^2.12.2",
     "rimraf": "^6.0.1",
+    "swiper": "^11.1.7",
     "tsparticles-slim": "^2.12.0"
   },
   "devDependencies": {
