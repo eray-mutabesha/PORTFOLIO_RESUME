@@ -117,10 +117,6 @@ function App() {
               background:"#1565c0" }}>
               <Typography><FontAwesomeIcon icon={faPhone }/> Contact</Typography>
               </Button>
-
-              
-        
-
           </Box>
         </Box>
       {/* twooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */}
@@ -179,7 +175,7 @@ function App() {
           gap:"100px"
         }}>
        
-             <img src='public\ErayProfil.jpg' className='profil_picture'/>
+             <img src='/public/ErayProfil.jpg' className='profil_picture'/>
 
              <Box  data-aos="zoom-in" sx={{
               alignItems:"center",
@@ -315,7 +311,7 @@ function App() {
              },
           }}>
             
-            <img src='public\javascriptImage.png' alt='logo' className='image_skill'/>
+            <img src='/public/javascriptImage.png' alt='logo' className='image_skill'/>
             <Typography >javascript</Typography>
 
           </Box>
@@ -332,7 +328,7 @@ function App() {
             },
          }}>
 
-           <img src='public\reactimage.png' alt='logo' className='image_skill'/>
+           <img src='/public/reactimage.png' alt='logo' className='image_skill'/>
            <Typography>React js</Typography>
 
          </Box>
@@ -349,7 +345,7 @@ function App() {
             },
          }}>
 
-           <img src='public\nodejsimage.png' alt='logo' className='image_skill'/>
+           <img src='/public/nodejsimage.png' alt='logo' className='image_skill'/>
            <Typography >Node js</Typography>
 
          </Box>
@@ -369,7 +365,7 @@ function App() {
             },
           
          }}>
-           <img src='public\materialui.png' alt='logo' className='image_skill'/>
+           <img src='/public/materialui.png' alt='logo' className='image_skill'/>
            <Typography >MaterialUI</Typography>
          </Box> 
 
@@ -388,7 +384,7 @@ function App() {
             },
           
          }}>
-           <img src='public\SQLiteimage.png' alt='logo' className='image_skill'/>
+           <img src='/public/SQLiteimage.png' alt='logo' className='image_skill'/>
            <Typography >Sqlite</Typography>
          </Box>
 
@@ -409,7 +405,7 @@ function App() {
             },
           
          }}>
-           <img src='public\htmlimage.png' alt='logo' className='image_skill'/>
+           <img src='/public/htmlimage.png' alt='logo' className='image_skill'/>
            <Typography >HTML</Typography>
          </Box>
          <Box 
@@ -429,7 +425,7 @@ function App() {
             },
          }}>
 
-           <img src='public\sassimage.png' alt='logo' className='image_skill'/>
+           <img src='/public/sassimage.png' alt='logo' className='image_skill'/>
            <Typography >Sass</Typography>
 
          </Box>
@@ -449,7 +445,7 @@ function App() {
             },
          }}>
 
-           <img src='public\git.png' alt='logo' className='image_skill'/>
+           <img src='/public/git.png' alt='logo' className='image_skill'/>
            <Typography >Git</Typography>
 
          </Box>
@@ -466,7 +462,7 @@ function App() {
             },         
          }}>
 
-           <img src='public\css3image.png' alt='logo' className='image_skill'/>
+           <img src='/public/css3image.png' alt='logo' className='image_skill'/>
            <Typography >Css</Typography>
 
          </Box>
@@ -483,7 +479,7 @@ function App() {
             },
          }}>
 
-           <img src='public\figma.jpg' alt='logo' className='image_skill'/>
+           <img src='/public/figma.jpg' alt='logo' className='image_skill'/>
            <Typography >Figma</Typography>
 
          </Box>
@@ -579,7 +575,7 @@ function App() {
             }}>
               
               <Box>
-              <img src='public\images.png' alt='image' className='freecodecamp_image'/>
+              <img src='/public/images.png' alt='image' className='freecodecamp_image'/>
               <Typography>Web developement</Typography>
               </Box>
               <Box sx={{
@@ -606,7 +602,7 @@ function App() {
             }}>
               
               <Box>
-              <img src='public\images.png' alt='image' className='freecodecamp_image'/>
+              <img src='/public/images.png' alt='image' className='freecodecamp_image'/>
               <Typography>JS algorithms and...</Typography>
               </Box>
               <Box sx={{
@@ -633,7 +629,7 @@ function App() {
             }}>
               
               <Box>
-              <img src='public\images.png' alt='image' className='freecodecamp_image'/>
+              <img src='/public/images.png' alt='image' className='freecodecamp_image'/>
               <Typography>JS algorithms and...</Typography>
               </Box>
               <Box sx={{
@@ -660,7 +656,7 @@ function App() {
             }}>
               
               <Box>
-              <img src='public\images.png' alt='image' className='freecodecamp_image'/>
+              <img src='/public/images.png' alt='image' className='freecodecamp_image'/>
               <Typography>JS algorithms and...</Typography>
               </Box>
               <Box sx={{
@@ -687,7 +683,7 @@ function App() {
             }}>
               
               <Box>
-              <img src='public\images.png' alt='image' className='freecodecamp_image'/>
+              <img src='/public/images.png' alt='image' className='freecodecamp_image'/>
               <Typography>JS algorithms and...</Typography>
               </Box>
               <Box sx={{
@@ -752,7 +748,7 @@ function App() {
             },
            }}>
 
-         <img src='public\whatshapp-removebg-preview.png' alt='email' className='image_wtp_contact'/>
+         <img src='/public/whatshapp-removebg-preview.png' alt='email' className='image_wtp_contact'/>
          <a href='https://wa.me/+250791434737?text=Hello%2C%20I%20am%20interested%20in%20your%20services'><Typography>+250 791434737</Typography></a>
          <Typography sx={{ color:"rgba(92, 91, 91, 0.678)"}}>Let's chat on whatsApp</Typography>
           
@@ -775,7 +771,7 @@ function App() {
             },
             }}>
 
-               <img src='public\eemm.png' alt='email' className='image_email_contact'/>
+               <img src='/public/eemm.png' alt='email' className='image_email_contact'/>
                <a  href={`mailto:${emailAddress}`}><Typography>eraymutabesha4@gmail.com</Typography></a>
                <Typography sx={{color:"rgba(92, 91, 91, 0.678)"}}>Email me</Typography>
           
