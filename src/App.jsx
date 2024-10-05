@@ -187,13 +187,15 @@ function App() {
               <Typography variant="h3" mt={2}>I'M <span className='eray'>ERAY</span> MUTABESHA </Typography>
               <Typography mt={3} sx={{
                 color:"rgba(58, 58, 58, 0.904)"
-              }}>Fullstack Developer | No-code Webflow expert | Cofounder of <span className='eray'>@kVolts_lab </span>and <span className='eray'>Tony elumelu foundation</span> certified business manager.
-                Experienced in building modern web applications and IoT solutions</Typography>
+              }}>Fullstack Developer within <span className='eray'>Nguvu Technology </span>Passionate about creating innovative projects,certified <span className='eray'>DISK</span> behavioral profiling expert..I thrive on building dynamic and intuitive web applications that deliver exceptional user experiences,
+                Experienced in building modern web applications</Typography>
                 
                 
                 <Stack direction="row" spacing={2} mt={2}>
-
-                  <Box><Button variant="contained">resume</Button></Box>
+                <a href="https://acrobat.adobe.com/id/urn:aaid:sc:eu:c6d90c0d-bb58-4231-84f7-228c35b62f96">
+                <Box><Button variant="contained" >resume</Button></Box>
+                </a>
+                  
 
                   <a href="https://www.linkedin.com/in/eray-mutabesha-186240256/">
 
@@ -271,9 +273,15 @@ function App() {
         <Typography mt={-20} variant="h4" >About me</Typography>
         <Typography  mt={5} sx={{
           color:"rgba(92, 91, 91, 0.904)"
-        }}>I am an enthusiastic web developer and entrepreneur who is passionate about innovation. I have extensive experience in full-stack development and possess skills in various frameworks/libraries such as jQuery, Laravel/InertiaJs, Codeigniter, VueJS/Nuxt, React, Bootstrap/TailwindCSS... My expertise lies in creating user-friendly interfaces and robust web applications/websites, and I have a proven track record in dynamic sectors like Fintech, IoT, and ERP. Whether I'm working independently or as part of a team, I always strive to deliver exceptional results that I can take pride in
-          I am an enthusiastic web developer and entrepreneur who is passionate about innovation. I have extensive experience in full-stack development and possess skills in various frameworks/libraries such as jQuery, Laravel/InertiaJs, Codeigniter, VueJS/Nuxt, React, Bootstrap/TailwindCSS... My expertise lies in creating user-friendly interfaces and robust web applications/websites, and I have a proven track record in dynamic sectors like Fintech, IoT, and ERP. Whether I'm working independently or as part of a team, I always strive to deliver exceptional results that I can take pride in
-          I am an enthusiastic web developer and entrepreneur who is passionate about innovation. I have extensive experience in full-stack development and possess skills in various frameworks/libraries such as jQuery, Laravel/InertiaJs, Codeigniter, VueJS/Nuxt, React, Bootstrap/TailwindCSS... My expertise lies in creating user-friendly interfaces and robust web applications/websites, and I have a proven track record in dynamic sectors like Fintech, IoT, and ERP. Whether I'm working independently or as part of a team, I always strive to deliver exceptional results that I can take pride in.</Typography>
+        }}>
+        Eray Mutabesha – Passionate and Innovative Developer
+Welcome to my world! My name is Eray Mutabesha and I am a developer with 3 years of experience in the technology industry. My journey began within Nguvu Technology, a start-up where I had the opportunity to take on complex challenges and contribute to innovative projects.
+
+Over time, my passion for technology and creation has allowed me to participate in prestigious competitions. During a hackathon organized by "Institut Français de Goma", our team won second place thanks to Yetu Museum: a platform dedicated to the exhibition and sale of works of art online. This project was selected as one of the top three, reinforcing my belief that technology can push the boundaries of creativity.
+
+My expertise does not stop there. I also worked on personal and collaborative projects, where innovation, problem solving and teamwork became the drivers of my success.
+
+Today, I continue my adventure by exploring new ideas, refining my skills and creating solutions that make a difference. Discover my projects and embark with me on this exciting quest for innovation.</Typography>
         
         </Box>
         </Box>
@@ -540,6 +548,7 @@ function App() {
         <Box ref={awardRef} className='award'     sx={{ 
           textAlign:"center",
           margin:"20px auto",
+          // border:"1px solid red"
           
         }}>
       <Typography variant="h4" mt={20} className='eray' >
@@ -564,10 +573,25 @@ function App() {
     >
       
        <SwiperSlide>
-       <Box sx={{
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <a href="https://www.freecodecamp.org/certification/Eray-mutabesha/responsive-web-design"  style={{textDecoration:"none"}}>
+        <Box sx={{
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
             borderRadius:"5PX",
-            width:"150px",
+            width:"200px",
+            height:"300px",
             textAlign:"center",
             display:"grid",
             gap:"30px",
@@ -575,12 +599,18 @@ function App() {
             }}>
               
               <Box>
-              <img src='/images.png' alt='image' className='freecodecamp_image'/>
-              <Typography>Web developement</Typography>
+              <img src='/images.png' alt='image' className='freecodecamp_image'   style={{
+                width:'120px',
+                height:"120px",
+                borderRadius:"50%"
+              }}/>
+              <Typography>Responsive web design</Typography>
               </Box>
               <Box sx={{
                 background:"rgb(182, 182, 182)",
                 width:"100%",
+                height:"50px",
+                marginBottom:"-30px"
                 
               }}>
               <Typography sx={{
@@ -589,12 +619,40 @@ function App() {
               </Box>
               
             </Box>
+        </a>
+
+
+
+
+
+
+
+
+
+
+
        </SwiperSlide>
       <SwiperSlide>
-      <Box sx={{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <a href="https://www.freecodecamp.org/certification/Eray-mutabesha/javascript-algorithms-and-data-structures"  style={{textDecoration:"none"}}>
+        <Box sx={{
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
             borderRadius:"5PX",
-            width:"150px",
+            width:"200px",
+            height:"300px",
             textAlign:"center",
             display:"grid",
             gap:"30px",
@@ -602,8 +660,75 @@ function App() {
             }}>
               
               <Box>
-              <img src='/images.png' alt='image' className='freecodecamp_image'/>
-              <Typography>JS algorithms and...</Typography>
+              <img src='/images.png' alt='image' className='freecodecamp_image'   style={{
+                width:'120px',
+                height:"120px",
+                borderRadius:"50%"
+              }}/>
+              <Typography>Legacy algorithms and Data structures</Typography>
+              </Box>
+              <Box sx={{
+                background:"rgb(182, 182, 182)",
+                width:"100%",
+                height:"50px",
+                marginBottom:"-30px"
+                
+              }}>
+              <Typography sx={{
+                borderTop:"0.5px solid rgba(211, 211, 211, 0.671)",
+                color:"rgba(92, 91, 91, 0.678)"}}>provide by freecodecamp</Typography>
+              </Box>
+              
+            </Box>
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </SwiperSlide>
+
+
+
+
+
+
+
+
+
+
+
+
+      <SwiperSlide>
+        <a href="#">
+        <Box sx={{
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            borderRadius:"5PX",
+            width:"200px",
+            height:"300px",
+            textAlign:"center",
+            display:"grid",
+            gap:"30px",
+            background:"white"
+            }}>
+              
+              <Box>
+              <img src='public/methode-DISC.png' alt='image' className='freecodecamp_image'  style={{
+                width:'120px',
+                height:"120px",
+                borderRadius:"50%",
+                objectFit:"cover",
+              }}/>
+              <Typography>Harmonie Operationnelle</Typography>
               </Box>
               <Box sx={{
                 background:"rgb(182, 182, 182)",
@@ -616,12 +741,27 @@ function App() {
               </Box>
               
             </Box>
+        </a>
+
       </SwiperSlide>
+
+
+
+
+
+
+
+
+
+
+
+
       <SwiperSlide>
       <Box sx={{
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
             borderRadius:"5PX",
-            width:"150px",
+            width:"200px",
+            height:"300px",
             textAlign:"center",
             display:"grid",
             gap:"30px",
@@ -629,35 +769,13 @@ function App() {
             }}>
               
               <Box>
-              <img src='/images.png' alt='image' className='freecodecamp_image'/>
-              <Typography>JS algorithms and...</Typography>
-              </Box>
-              <Box sx={{
-                background:"rgb(182, 182, 182)",
-                width:"100%",
-                
-              }}>
-              <Typography sx={{
-                borderTop:"0.5px solid rgba(211, 211, 211, 0.671)",
-                color:"rgba(92, 91, 91, 0.678)"}}>provide by freecodecamp</Typography>
-              </Box>
-              
-            </Box>
-      </SwiperSlide>
-      <SwiperSlide>
-      <Box sx={{
-            border:"0.5px solid rgba(211, 211, 211, 0.671)",
-            borderRadius:"5PX",
-            width:"150px",
-            textAlign:"center",
-            display:"grid",
-            gap:"30px",
-            background:"white"
-            }}>
-              
-              <Box>
-              <img src='/images.png' alt='image' className='freecodecamp_image'/>
-              <Typography>JS algorithms and...</Typography>
+              <img src='/public/eclosionHub.png' alt='image' className='freecodecamp_image'  style={{
+                width:'120px',
+                height:"120px",
+                borderRadius:"50%",
+                objectFit:"cover",
+              }}/>
+              <Typography>EclosionHack 2024, hackathon</Typography>
               </Box>
               <Box sx={{
                 background:"rgb(182, 182, 182)",
@@ -671,11 +789,25 @@ function App() {
               
             </Box>
       </SwiperSlide> 
+
+
+
+
+
+
+
+
+
+
+
+
+
       <SwiperSlide>
       <Box sx={{
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
             borderRadius:"5PX",
-            width:"150px",
+            width:"200px",
+            height:"300px",
             textAlign:"center",
             display:"grid",
             gap:"30px",
@@ -683,8 +815,13 @@ function App() {
             }}>
               
               <Box>
-              <img src='/images.png' alt='image' className='freecodecamp_image'/>
-              <Typography>JS algorithms and...</Typography>
+              <img src='/wakisha.png' alt='image' className='freecodecamp_image'  style={{
+                width:'120px',
+                height:"120px",
+                borderRadius:"50%",
+                objectFit:"cover",
+              }}/>
+              <Typography>Marketing Digital</Typography>
               </Box>
               <Box sx={{
                 background:"rgb(182, 182, 182)",
