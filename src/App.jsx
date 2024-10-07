@@ -661,7 +661,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
 
 
       <SwiperSlide>
-      <a href="#" style={{textDecoration:"none"}}>
+      <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:f5946941-e62e-4c88-b9df-dd1c36ac5b38" style={{textDecoration:"none"}}>
       <Box sx={{
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
             borderRadius:"5PX",
@@ -711,7 +711,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
 
 
       <SwiperSlide>
-        <a href="#" style={{textDecoration:"none"}}>
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:62e541ff-e535-4c6c-a7af-df9306adcd8e" style={{textDecoration:"none"}}>
       <Box sx={{
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
             borderRadius:"5PX",
@@ -819,7 +819,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
                 height:"120px",
                 borderRadius:"50%"
               }}/>
-              
+
               <Typography>Legacy algorithms and Data structures</Typography>
               </Box>
               <Box sx={{
