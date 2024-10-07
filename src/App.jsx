@@ -256,7 +256,7 @@ function App() {
 {/* ......................................eray home end.................................... */}
 
         {/* .........................ABOUT ................................................................. */}
-        <Box ref={aboutRef} sx={{
+        <Box id="about1" ref={aboutRef} sx={{
           margin:"40px ",
           border:"1px solid white"}}>
 
@@ -270,7 +270,7 @@ function App() {
           zIndex:"15"
         }}>
 
-        <Typography mt={-20} variant="h4" >About me</Typography>
+        <Typography mt={20} variant="h4" >About me</Typography>
         <Typography  mt={5} sx={{
           color:"rgba(92, 91, 91, 0.904)"
         }}>
@@ -292,7 +292,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
        
 
 
-  <Box sx={ {border:"1px solid white",margin:"40px ",}} ref={skillsRef}>
+  <Box sx={ {border:"1px solid white",margin:"40px ",}} ref={skillsRef} id="skills1">
 
         <Typography variant="h4" mt={15} >STACK & DAILY USED TOOLS</Typography>
 
@@ -500,7 +500,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
 
 {/* ........................................PROJECTS......................................................... */}
         
-<Box ref={workRef} sx={{
+<Box ref={workRef} id="projects1" sx={{
   margin:"40px ",
   textAlign:"justify"
 
@@ -545,7 +545,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
       {/* ...........................................END OF PROJECTS................................................... */}
 
         {/* .............................................AWARDS............................................ */}
-        <Box ref={awardRef} className='award'     sx={{ 
+        <Box ref={awardRef} id="award1"className='award'     sx={{ 
           textAlign:"center",
           margin:"20px auto",
           // border:"1px solid red"
@@ -572,7 +572,6 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
       onSwiper={(swiper) => console.log(swiper)}
     >
       
-       <SwiperSlide>
 
 
 
@@ -586,6 +585,178 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <SwiperSlide>
+        <a href="#" style={{textDecoration:"none"}}>
+        <Box sx={{
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            borderRadius:"5PX",
+            width:"200px",
+            height:"300px",
+            textAlign:"center",
+            display:"grid",
+            gap:"30px",
+            background:"white"
+            }}>
+              
+              <Box>
+              <img src='public/methode-DISC.png' alt='image' className='freecodecamp_image'  style={{
+                width:'120px',
+                height:"120px",
+                borderRadius:"50%",
+                objectFit:"cover",
+              }}/>
+              <Typography>Harmonie Operationnelle</Typography>
+              </Box>
+              <Box sx={{
+                background:"rgb(182, 182, 182)",
+                width:"100%",
+                height:"50px",
+                marginBottom:"-70px"
+                
+              }}>
+              <Typography sx={{
+                borderTop:"0.5px solid rgba(211, 211, 211, 0.671)",
+                color:"rgba(92, 91, 91, 0.678)"}}>provide by EclosionHub</Typography>
+              </Box>
+              
+            </Box>
+        </a>
+
+      </SwiperSlide>
+
+
+
+
+
+
+
+
+
+
+
+
+      <SwiperSlide>
+      <a href="#" style={{textDecoration:"none"}}>
+      <Box sx={{
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            borderRadius:"5PX",
+            width:"200px",
+            height:"300px",
+            textAlign:"center",
+            display:"grid",
+            gap:"30px",
+            background:"white"
+            }}>
+              
+              <Box>
+              <img src='/public/eclosionHub.png' alt='image' className='freecodecamp_image'  style={{
+                width:'120px',
+                height:"120px",
+                borderRadius:"50%",
+                objectFit:"cover",
+              }}/>
+              <Typography>EclosionHack 2024, hackathon</Typography>
+              </Box>
+              <Box sx={{
+                background:"rgb(182, 182, 182)",
+                width:"100%",
+                height:"50px",
+                marginBottom:"-30px"
+                
+              }}>
+              <Typography sx={{
+                borderTop:"0.5px solid rgba(211, 211, 211, 0.671)",
+                color:"rgba(92, 91, 91, 0.678)"}}>provide by EclosionHub</Typography>
+              </Box>
+              
+            </Box>
+            </a>
+      </SwiperSlide> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <SwiperSlide>
+        <a href="#" style={{textDecoration:"none"}}>
+      <Box sx={{
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            borderRadius:"5PX",
+            width:"200px",
+            height:"300px",
+            textAlign:"center",
+            display:"grid",
+            gap:"30px",
+            background:"white"
+            }}>
+              
+              <Box>
+              <img src='/wakisha.png' alt='image' className='freecodecamp_image'  style={{
+                width:'120px',
+                height:"120px",
+                borderRadius:"50%",
+                objectFit:"cover",
+              }}/>
+              <Typography>Marketing Digital</Typography>
+              </Box>
+              <Box sx={{
+                background:"rgb(182, 182, 182)",
+                width:"100%",
+                height:"50px",
+                marginBottom:"-70px"
+                
+              }}>
+              <Typography sx={{
+                borderTop:"0.5px solid rgba(211, 211, 211, 0.671)",
+                color:"rgba(92, 91, 91, 0.678)"}}>provide by EclosionHub</Typography>
+              </Box>
+              
+            </Box>
+            </a>
+      </SwiperSlide> 
+
+
+
+
+
+
+
+
+
+
+      <SwiperSlide>
         <a href="https://www.freecodecamp.org/certification/Eray-mutabesha/responsive-web-design"  style={{textDecoration:"none"}}>
         <Box sx={{
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
@@ -610,7 +781,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
                 background:"rgb(182, 182, 182)",
                 width:"100%",
                 height:"50px",
-                marginBottom:"-30px"
+                marginBottom:"-70px"
                 
               }}>
               <Typography sx={{
@@ -620,19 +791,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
               
             </Box>
         </a>
-
-
-
-
-
-
-
-
-
-
-
        </SwiperSlide>
-      <SwiperSlide>
 
 
 
@@ -640,13 +799,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
 
 
 
-
-
-
-
-
-
-
+       <SwiperSlide>
         <a href="https://www.freecodecamp.org/certification/Eray-mutabesha/javascript-algorithms-and-data-structures"  style={{textDecoration:"none"}}>
         <Box sx={{
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
@@ -681,160 +834,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
               
             </Box>
         </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       </SwiperSlide>
-
-
-
-
-
-
-
-
-
-
-
-
-      <SwiperSlide>
-        <a href="#">
-        <Box sx={{
-            border:"0.5px solid rgba(211, 211, 211, 0.671)",
-            borderRadius:"5PX",
-            width:"200px",
-            height:"300px",
-            textAlign:"center",
-            display:"grid",
-            gap:"30px",
-            background:"white"
-            }}>
-              
-              <Box>
-              <img src='public/methode-DISC.png' alt='image' className='freecodecamp_image'  style={{
-                width:'120px',
-                height:"120px",
-                borderRadius:"50%",
-                objectFit:"cover",
-              }}/>
-              <Typography>Harmonie Operationnelle</Typography>
-              </Box>
-              <Box sx={{
-                background:"rgb(182, 182, 182)",
-                width:"100%",
-                
-              }}>
-              <Typography sx={{
-                borderTop:"0.5px solid rgba(211, 211, 211, 0.671)",
-                color:"rgba(92, 91, 91, 0.678)"}}>provide by freecodecamp</Typography>
-              </Box>
-              
-            </Box>
-        </a>
-
-      </SwiperSlide>
-
-
-
-
-
-
-
-
-
-
-
-
-      <SwiperSlide>
-      <Box sx={{
-            border:"0.5px solid rgba(211, 211, 211, 0.671)",
-            borderRadius:"5PX",
-            width:"200px",
-            height:"300px",
-            textAlign:"center",
-            display:"grid",
-            gap:"30px",
-            background:"white"
-            }}>
-              
-              <Box>
-              <img src='/public/eclosionHub.png' alt='image' className='freecodecamp_image'  style={{
-                width:'120px',
-                height:"120px",
-                borderRadius:"50%",
-                objectFit:"cover",
-              }}/>
-              <Typography>EclosionHack 2024, hackathon</Typography>
-              </Box>
-              <Box sx={{
-                background:"rgb(182, 182, 182)",
-                width:"100%",
-                
-              }}>
-              <Typography sx={{
-                borderTop:"0.5px solid rgba(211, 211, 211, 0.671)",
-                color:"rgba(92, 91, 91, 0.678)"}}>provide by freecodecamp</Typography>
-              </Box>
-              
-            </Box>
-      </SwiperSlide> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <SwiperSlide>
-      <Box sx={{
-            border:"0.5px solid rgba(211, 211, 211, 0.671)",
-            borderRadius:"5PX",
-            width:"200px",
-            height:"300px",
-            textAlign:"center",
-            display:"grid",
-            gap:"30px",
-            background:"white"
-            }}>
-              
-              <Box>
-              <img src='/wakisha.png' alt='image' className='freecodecamp_image'  style={{
-                width:'120px',
-                height:"120px",
-                borderRadius:"50%",
-                objectFit:"cover",
-              }}/>
-              <Typography>Marketing Digital</Typography>
-              </Box>
-              <Box sx={{
-                background:"rgb(182, 182, 182)",
-                width:"100%",
-                
-              }}>
-              <Typography sx={{
-                borderTop:"0.5px solid rgba(211, 211, 211, 0.671)",
-                color:"rgba(92, 91, 91, 0.678)"}}>provide by freecodecamp</Typography>
-              </Box>
-              
-            </Box>
-      </SwiperSlide> 
       ...
     </Swiper>
       </Box>
@@ -845,7 +845,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
       
       
       {/* contact................................................................. */}
-      <Box ref={contactRef}  sx={{
+      <Box ref={contactRef} id="contact1" sx={{
     
     
     margin:"40px ",
@@ -924,12 +924,12 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
           {/* footer...................................................................... */}
           <Box sx={{
             
-            background:"rgba(3, 3, 3, 0.767)",
+            // background:"rgba(3, 3, 3, 0.767)",
             width:"100%"
             }}>
 
 
-          <Box mt={10} spacing={10}  sx={{
+          <Box mt={30} spacing={10}  sx={{
             display:"grid",
             gridTemplateColumns:{
               xs:"100% ",
@@ -940,28 +940,30 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
               sm:"",
             },
             justifyContent:"space-around",
-            color:"white",
+         
             padding:"25px"
             
           }}>
             <Box>
               <Typography variant='h5'>useful links</Typography>
-              <Typography>Home</Typography>
-              <Typography>About</Typography>
-              <Typography>Projects</Typography>
-              <Typography>Awards</Typography>
-              <Typography>Contact</Typography>
+              <Typography><a href='#'  style={{textDecoration:"none",color:"rgba(92, 91, 91, 0.678)"}}>Home</a></Typography>
+              <Typography><a href='#about1' style={{textDecoration:"none",color:"rgba(92, 91, 91, 0.678)"}}>About</a></Typography>
+              <Typography><a href='#projects1'  style={{textDecoration:"none",color:"rgba(92, 91, 91, 0.678)"}}>Projects</a></Typography>
+              <Typography><a href='#award1'  style={{textDecoration:"none",color:"rgba(92, 91, 91, 0.678)"}}>Awards</a></Typography>
+              <Typography><a href='#contact1'  style={{textDecoration:"none",color:"rgba(92, 91, 91, 0.678)"}}>Contact</a></Typography>
             </Box>
             <Box>
               <Typography variant='h5'>Contact me</Typography>
-              <Typography>Rwanda :</Typography>
-              <Typography>+250 791434737</Typography>
-              <Typography>Email :</Typography>
-              <Typography>eraymutabesha4@gmail.com</Typography>
+              <Typography style={{color:"rgba(92, 91, 91, 0.678)"}}>Rwanda :</Typography>
+              <Typography style={{color:"rgba(92, 91, 91, 0.678)"}}>+250 791434737</Typography>
+              <Typography style={{color:"rgba(92, 91, 91, 0.678)"}}>Email :</Typography>
+              <Typography style={{color:"rgba(92, 91, 91, 0.678)"}}>eraymutabesha4@gmail.com</Typography>
             </Box>
             <Box>
               <Typography variant='h5'>About Eray</Typography>
-              <Typography>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet repellat libero quisquam qui voluptas, nostrum eum itaque, incidunt nisi, minima sapiente perspiciatis delectus doloremque. Libero eaque laborum quas dicta beatae.</Typography>
+              <Typography style={{color:"rgba(92, 91, 91, 0.678)"}}>
+              Fullstack Developer within Nguvu Technology Passionate about creating innovative projects,certified DISK behavioral profiling expert..I thrive on building dynamic and intuitive web applications that deliver exceptional user experiences, Experienced in building modern web applications
+              </Typography>
             </Box>
           </Box>
 
