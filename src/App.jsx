@@ -819,6 +819,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
                 height:"120px",
                 borderRadius:"50%"
               }}/>
+              
               <Typography>Legacy algorithms and Data structures</Typography>
               </Box>
               <Box sx={{
