@@ -624,7 +624,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
             }}>
               
               <Box>
-              <img src='public/methode-DISC.png' alt='image' className='freecodecamp_image'  style={{
+              <img src='/methode-DISC.png' alt='image' className='freecodecamp_image'  style={{
                 width:'120px',
                 height:"120px",
                 borderRadius:"50%",
@@ -674,7 +674,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
             }}>
               
               <Box>
-              <img src='/public/eclosionHub.png' alt='image' className='freecodecamp_image'  style={{
+              <img src='/eclosionHub.png' alt='image' className='freecodecamp_image'  style={{
                 width:'120px',
                 height:"120px",
                 borderRadius:"50%",
