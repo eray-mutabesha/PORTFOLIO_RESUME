@@ -257,7 +257,8 @@ function App() {
 
         {/* .........................ABOUT ................................................................. */}
         <Box id="about1" ref={aboutRef} sx={{
-          margin:"40px ",
+          margin:"5%",
+          
           border:"1px solid white"}}>
 
         <Box 
@@ -292,7 +293,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
        
 
 
-  <Box sx={ {border:"1px solid white",margin:"40px ",}} ref={skillsRef} id="skills1">
+  <Box sx={ {border:"1px solid white",margin:"5%",}} ref={skillsRef} id="skills1">
 
         <Typography variant="h4" mt={15} >STACK & DAILY USED TOOLS</Typography>
 
@@ -501,7 +502,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
 {/* ........................................PROJECTS......................................................... */}
         
 <Box ref={workRef} id="projects1" sx={{
-  margin:"40px ",
+  margin:"5%",
   textAlign:"justify"
 
 }}>
@@ -610,7 +611,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
 
 
       <SwiperSlide>
-        <a href="#" style={{textDecoration:"none"}}>
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:37bc1cda-7fa7-4558-b877-8b65234fbc4b" style={{textDecoration:"none"}}>
         <Box sx={{
             border:"0.5px solid rgba(211, 211, 211, 0.671)",
             borderRadius:"5PX",
@@ -848,7 +849,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
       <Box ref={contactRef} id="contact1" sx={{
     
     
-    margin:"40px ",
+    margin:"5% ",
    }}>
       <Typography variant="h4"  >CONTACT</Typography>
         <Typography variant="h5" mt={5} sx={{color:"rgba(92, 91, 91, 0.678)"}}>Get in Touch</Typography>

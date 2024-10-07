@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
-import ParticleBackground from './components/ParticleBackground.jsx';
+// import ParticleBackground from './components/ParticleBackground.jsx';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 
@@ -28,7 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     
      <ThemeProvider theme={theme}>
       <App />
-      <ParticleBackground/>
+      {/* <ParticleBackground/> */}
       </ThemeProvider> 
     
     
