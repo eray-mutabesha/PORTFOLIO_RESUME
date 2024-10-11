@@ -8,11 +8,10 @@ import 'aos/dist/aos.css'
 import { useEffect } from 'react';
 import ImageDemo from './components/ImageDemo';
 import { useRef } from 'react';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/swiper-bundle.css'
-
+import ImagesHospital from './components/ImagesHospital';
 
 
 
@@ -58,77 +57,55 @@ function App() {
         <Box ref={menuRef} sx={{
         
          background: "#1976d2",
-          
-          width:"160px",
-          color:"white",
+          width:"122px",
           height:"100vh",
           position:"fixed",
           display:"grid",
+        
           zIndex:"20",
           transition:"0.5s",
+          color:"#1976d2",
           marginLeft: {
             xs: "-400px",
             md: "0px"
           },
-          
+         ':hover':{
+          width:"190px",
+          color:"white"
+         }
         }}>
 
           <Box sx={{ 
           display:"grid",
-          margin:"5px auto",
+          margin:"45px ",
           width:"fit-content",
           marginTop:"100px"
           
           }}>
           
-             
-             <Button onClick={() => scrollToSection(homeRef)}  variant="contained" size="medium" sx={{
-              height:"fit-content",
-              background:"#1565c0" }}>
-              <Typography><FontAwesomeIcon icon={faHouse} /> Home</Typography>
-              </Button>
-             
-              <Button onClick={() => scrollToSection(aboutRef)}  variant="contained" size="medium" sx={{
-              height:"fit-content",
-              background:"#1565c0" }}>
-              <Typography><FontAwesomeIcon icon={faUser }/> About</Typography>
-              </Button>
+            <Typography onClick={() => scrollToSection(homeRef)} sx={{cursor:"pointer"}}><FontAwesomeIcon icon={faHouse} style={{color:"white"}}/> HOME</Typography>
+            <Typography onClick={() => scrollToSection(aboutRef)} sx={{cursor:"pointer"}}><FontAwesomeIcon icon={faUser } style={{color:"white"}}/> ABOUT</Typography>
+            <Typography onClick={() => scrollToSection(skillsRef)} sx={{cursor:"pointer"}}><FontAwesomeIcon icon={faLaptopCode } style={{color:"white"}}/> SKILLS</Typography>
+            <Typography onClick={() => scrollToSection(workRef)}  sx={{cursor:"pointer"}}><FontAwesomeIcon icon={faSuitcase } style={{color:"white"}}/> WORK</Typography>
+            <Typography onClick={() => scrollToSection(awardRef)} sx={{cursor:"pointer"}}><FontAwesomeIcon icon={faAward } style={{color:"white"}}/> AWARD</Typography>
+            <Typography onClick={() => scrollToSection(contactRef)} sx={{cursor:"pointer"}}><FontAwesomeIcon icon={faPhone } style={{color:"white"}}/> CONTACT</Typography>
 
-              <Button onClick={() => scrollToSection(skillsRef)} variant="contained" size="medium" sx={{
-              height:"fit-content",
-              background:"#1565c0" }}>
-              <Typography><FontAwesomeIcon icon={faLaptopCode }/> Skills</Typography>
-              </Button>
-
-              <Button onClick={() => scrollToSection(workRef)} variant="contained" size="medium" sx={{
-              height:"fit-content",
-              background:"#1565c0" }}>
-              <Typography><FontAwesomeIcon icon={faSuitcase }/> Work</Typography>
-              </Button>
-
-              <Button onClick={() => scrollToSection(awardRef)} variant="contained" size="medium" sx={{
-              height:"fit-content",
-              background:"#1565c0" }}>
-              <Typography><FontAwesomeIcon icon={faAward }/> Award</Typography>
-              </Button>
-
-              <Button onClick={() => scrollToSection(contactRef)} variant="contained" size="medium" sx={{
-              height:"fit-content",
-              background:"#1565c0" }}>
-              <Typography><FontAwesomeIcon icon={faPhone }/> Contact</Typography>
-              </Button>
           </Box>
         </Box>
-      {/* twooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */}
+
+
+
+
+
+
         <Box  sx={{
-        
            width:{
               xs:"100%",
              md:"100%",
            },
              marginLeft:{
              xs: "0px",
-            md: "160px"
+            md: "120px"
            },
           zIndex:"10"
         }}>
@@ -156,22 +133,25 @@ function App() {
      
      <Box ref={homeRef} sx={{
           border:"1px solid white",
-          width:"90%" ,
+          width:{
+            xs:"90%",
+            lm:"70%"
+          } ,
           marginLeft:"auto",
           marginRight:"auto",
           
           }}>
-        {/* ..................................dffsdferf */}
+      
+
+
         <Box  id="home"   
          sx={{ 
-         
-          
-          marginTop:"150px",
-          alignItems:"center",
-          display: {
+           marginTop:"200px",
+           alignItems:"center",
+           display: {
             xs: "grid",
-            sm: "flex"
-          },
+            sm: "flex",
+           },
           gap:"100px"
         }}>
        
@@ -255,26 +235,45 @@ function App() {
         </Box>
 {/* ......................................eray home end.................................... */}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {/* .........................ABOUT ................................................................. */}
         <Box id="about1" ref={aboutRef} sx={{
-          margin:"5%",
-          
-          border:"1px solid white"}}>
+          marginTop:"200px",
+          marginLeft:"auto",
+          marginRight:"auto",
+          width:{
+            xs:"95%",
+            lm:"80%"
+          } 
+          }}>
 
         <Box 
           data-aos="fade-up" sx={{
           marginLeft:"auto",
           marginRight:"auto",
-          marginTop:"300px",
+          marginTop:"",
           
           background:"white",
           zIndex:"15"
         }}>
-
-        <Typography mt={20} variant="h4" >About me</Typography>
-        <Typography  mt={5} sx={{
-          color:"rgba(92, 91, 91, 0.904)"
-        }}>
+        <Typography   sx={{ color:"rgba(92, 91, 91, 0.904)"}} >SOME INFO</Typography>
+        <Typography  variant="h4" >ABOUT ME</Typography>
+        <Typography  mt={5} sx={{ color:"rgba(92, 91, 91, 0.904)"}}>
         Eray Mutabesha – Passionate and Innovative Developer
 Welcome to my world! My name is Eray Mutabesha and I am a developer with 3 years of experience in the technology industry. My journey began within Nguvu Technology, a start-up where I had the opportunity to take on complex challenges and contribute to innovative projects.
 
@@ -293,9 +292,18 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
        
 
 
-  <Box sx={ {border:"1px solid white",margin:"5%",}} ref={skillsRef} id="skills1">
+        <Box mt={25} sx={ {
+         marginLeft:"auto",
+          marginRight:"auto",
+          width:{
+            xs:"95%",
+            lm:"80%"
+          } 
+          }} ref={skillsRef} id="skills1">
 
-        <Typography variant="h4" mt={15} >STACK & DAILY USED TOOLS</Typography>
+
+        <Typography   sx={{ color:"rgba(92, 91, 91, 0.904)"}} >HERE IS MY</Typography>
+        <Typography variant="h4"  >STACK & DAILY USED TOOLS</Typography>
 
         <Box mt={5} sx={{
           display:"grid",
@@ -321,7 +329,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
           }}>
             
             <img src='/javascriptImage.png' alt='logo' className='image_skill'/>
-            <Typography >javascript</Typography>
+            <Typography >JavaScript</Typography>
 
           </Box>
 
@@ -394,7 +402,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
           
          }}>
            <img src='/SQLiteimage.png' alt='logo' className='image_skill'/>
-           <Typography >Sqlite</Typography>
+           <Typography >SQlite</Typography>
          </Box>
 
          <Box sx={{
@@ -415,7 +423,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
           
          }}>
            <img src='/htmlimage.png' alt='logo' className='image_skill'/>
-           <Typography >HTML</Typography>
+           <Typography >HTML5</Typography>
          </Box>
          <Box 
 
@@ -472,7 +480,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
          }}>
 
            <img src='/css3image.png' alt='logo' className='image_skill'/>
-           <Typography >Css</Typography>
+           <Typography >CSS3</Typography>
 
          </Box>
 
@@ -492,6 +500,63 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
            <Typography >Figma</Typography>
 
          </Box>
+
+
+
+
+
+         <Box mt={2} sx={{
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            transition:"1s",
+            borderRadius:"15PX",
+            height:"90px",
+            width:"80px",
+            textAlign:"center",
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",            
+            },
+         }}>
+
+           <img src='/mys.png' alt='logo' className='image_skill'/>
+           <Typography >MySQL</Typography>
+
+         </Box>
+
+
+         <Box mt={2} sx={{
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            transition:"1s",
+            borderRadius:"15PX",
+            height:"90px",
+            width:"80px",
+            textAlign:"center",
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",            
+            },
+         }}>
+
+           <img src='/boostrap.jpeg' alt='logo' className='image_skill'/>
+           <Typography >Boostrap</Typography>
+
+         </Box>
+
+
+         <Box mt={2} sx={{
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            transition:"1s",
+            borderRadius:"15PX",
+            height:"90px",
+            width:"80px",
+            textAlign:"center",
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",            
+            },
+         }}>
+
+           <img src='/wordpress.png' alt='logo' className='image_skill'/>
+           <Typography >Wordpress</Typography>
+
+         </Box>
           
         </Box>
         </Box>
@@ -499,14 +564,53 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
 {/* ...............................END OF SKILLS............................................................... */}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {/* ........................................PROJECTS......................................................... */}
         
 <Box ref={workRef} id="projects1" sx={{
-  margin:"5%",
-  textAlign:"justify"
+            marginTop:"200px",
+            marginLeft:"auto",
+            marginRight:"auto",
+            width:{
+              xs:"95%",
+              lm:"80%"
+            } ,
+           textAlign:"justify",
+           
 
-}}>
-        <Typography variant="h4"  mt={25}>FEATURED PROJECTS</Typography>
+}}> 
+        
+        <Typography   sx={{ color:"rgba(92, 91, 91, 0.904)"}} >TAKE A LOOK AT MY</Typography>
+        <Typography variant="h4"  >FEATURED PROJECTS</Typography>
 
         
         
@@ -518,6 +622,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
             borderRadius:"15PX",
             background:"white",
             padding:"10px",
+            color:"rgba(92, 91, 91, 0.678)",
             display:{
               xs:"grid",
               sm:"flex"
@@ -533,23 +638,94 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
         </Box>
 
         <Box>
-         <Typography  variant="h4" className='eray'>SMS</Typography>
-         <Typography>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas necessitatibus vitae aliquid ullam sint quae ut repellat facilis, repudiandae provident sequi quia nisi quis laborum soluta quam placeat consequuntur iusto.</Typography>
-         <Button>Check it ou here </Button>
+         <Typography  variant="h5" className='eray'>SCHOOL MANAGEMENT SYSTEM</Typography>
+         <Typography>Built with our dev team at <span className="eray">#NGUVU TECH</span></Typography>
+         <Typography>
+         I had the opportunity to collaborate on the development of a complete management system for a school, as part of a group project. This project aimed to facilitate the management of the various administrative and academic operations of a school. We worked as a team to design an efficient, modern and scalable solution that meets the specific needs of teachers, administrators, students and parents.
+        </Typography>
+        <Typography  variant="h6" className='eray'>Need to check it out and the administrator password ?, contact me privately please !!!</Typography>
+          {/* <a href="sms.nguvutech.com"><Button>sms.nguvutech.com</Button></a> */}
+        </Box>
+
+        </Box>
+
+
+
+
+
+
+
+
+
+        <Box  mt={5} sx={{
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            transition:"1s",
+            borderRadius:"15PX",
+            background:"white",
+            padding:"10px",
+            color:"rgba(92, 91, 91, 0.678)",
+            display:{
+              xs:"grid",
+              sm:"flex"
+            },
+            gap:"20px",
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+            },
+         }}>
+
+        <Box>
+        <ImagesHospital/>
+        </Box>
+
+        <Box>
+         <Typography  variant="h5" className='eray'>HOSPITAL MANAGEMENT</Typography>
+         <Typography>
+         As part of the evolving management needs of hospitals and medical centers, I designed and developed a hospital management system, designed to facilitate the management of medical and administrative operations in a hospital environment. This project aims to centralize and automate several essential aspects of the operation of a hospital, thus guaranteeing greater efficiency, reduced errors and better patient care.
+         </Typography>
+         <ul>
+          
+          <li>Improve the efficiency of administrative and medical processes.</li>
+          <li>Ensure centralized and secure management of patient data.</li>
+          <li>Facilitate coordination between the different departments (consultations, hospitalizations, outpatient, surgery, etc.).</li>
+          <li>Reduce human errors by automating certain repetitive tasks</li>
+          <li>Offer better monitoring of patients to improve their medical care</li>
+         </ul>
+        <Typography  variant="h6" className='eray'></Typography>
+          <a href="https://github.com/eray-mutabesha/hospitalManagement"><Button>Check the project repository</Button></a> 
         </Box>
 
         </Box>
         </Box>
 
         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
        
       {/* ...........................................END OF PROJECTS................................................... */}
 
         {/* .............................................AWARDS............................................ */}
         <Box ref={awardRef} id="award1"className='award'     sx={{ 
           textAlign:"center",
-          margin:"20px auto",
-          // border:"1px solid red"
+          marginTop:"200px",
+          marginLeft:"auto",
+          marginRight:"auto",
+          width:{
+            xs:"95%",
+            lm:"80%"
+          } 
           
         }}>
       <Typography variant="h4" mt={20} className='eray' >
@@ -573,25 +749,6 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
       onSwiper={(swiper) => console.log(swiper)}
     >
       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -848,12 +1005,22 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
       
       {/* contact................................................................. */}
       <Box ref={contactRef} id="contact1" sx={{
-    
-    
-    margin:"5% ",
+              marginTop:"200px",
+              marginLeft:"auto",
+              marginRight:"auto",
+              width:{
+                xs:"95%",
+                lm:"80%"
+              } 
    }}>
+     <Typography   sx={{ color:"rgba(92, 91, 91, 0.904)"}} >SAY HELLO</Typography>
       <Typography variant="h4"  >CONTACT</Typography>
         <Typography variant="h5" mt={5} sx={{color:"rgba(92, 91, 91, 0.678)"}}>Get in Touch</Typography>
+
+
+
+
+
 
         <Box mt={2} data-aos="zoom-in-down"  sx={{
           width:"100%",
@@ -882,14 +1049,15 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
             padding:"10px",
             background:"white",
             transition:"1s",
+            boxShadow:"0px 0px 7px 0px rgba(207, 207, 207, 0.548)",
             '&:hover': {
-              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+              boxShadow:"0px 0px 5px 0px rgb(177, 175, 175)",
             },
            }}>
 
-         <img src='/whatshapp-removebg-preview.png' alt='email' className='image_wtp_contact'/>
-         <a href='https://wa.me/+250791434737?text=Hello%2C%20I%20am%20interested%20in%20your%20services'><Typography>+250 791434737</Typography></a>
-         <Typography sx={{ color:"rgba(92, 91, 91, 0.678)"}}>Let's chat on whatsApp</Typography>
+         <img src='/calender.jpg' alt='email' className='image_wtp_contact'/>
+         <a href='https://calendly.com/eraymutabesha4/30min'><Typography>Calendly</Typography></a>
+         <Typography sx={{ color:"rgba(92, 91, 91, 0.678)"}}>Schedule a Meeting</Typography>
           
           </Box>
 
@@ -905,14 +1073,15 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
             padding:"10px",
             background:"white",
             transition:"1s",
+            boxShadow:"0px 0px 7px 0px rgba(207, 207, 207, 0.548)",
             '&:hover': {
-              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",
+              boxShadow:"0px 0px 5px 0px rgb(177, 175, 175)",
             },
             }}>
 
-               <img src='/eemm.png' alt='email' className='image_email_contact'/>
-               <a  href={`mailto:${emailAddress}`}><Typography>eraymutabesha4@gmail.com</Typography></a>
-               <Typography sx={{color:"rgba(92, 91, 91, 0.678)"}}>Email me</Typography>
+               <img src='/eemm.png' alt='email' className='image_email_contact' style={{marginTop:"20px"}}/>
+               <a  href={`mailto:${emailAddress}`} ><Typography mt={3}>eraymutabesha4@gmail.com</Typography></a>
+               <Typography sx={{color:"rgba(92, 91, 91, 0.678)",}}>Email me</Typography>
           
           </Box>
 
@@ -926,7 +1095,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
           {/* footer...................................................................... */}
           <Box sx={{
             
-            // background:"rgba(3, 3, 3, 0.767)",
+    
             width:"100%"
             }}>
 
@@ -974,6 +1143,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
         
         
       </Box>
+      
       </div>
       </>
      
