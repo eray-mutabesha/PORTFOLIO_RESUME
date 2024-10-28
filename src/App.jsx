@@ -258,7 +258,7 @@ function App() {
           marginRight:"auto",
           width:{
             xs:"95%",
-            lm:"80%"
+            lm:"70%"
           } 
           }}>
 
@@ -297,7 +297,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
           marginRight:"auto",
           width:{
             xs:"95%",
-            lm:"80%"
+            lm:"70%"
           } 
           }} ref={skillsRef} id="skills1">
 
@@ -602,7 +602,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
             marginRight:"auto",
             width:{
               xs:"95%",
-              lm:"80%"
+              lm:"70%"
             } ,
            textAlign:"justify",
            
@@ -724,7 +724,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
           marginRight:"auto",
           width:{
             xs:"95%",
-            lm:"80%"
+            lm:"99%"
           } 
           
         }}>
@@ -1010,7 +1010,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
               marginRight:"auto",
               width:{
                 xs:"95%",
-                lm:"80%"
+                lm:"70%"
               } 
    }}>
      <Typography   sx={{ color:"rgba(92, 91, 91, 0.904)"}} >SAY HELLO</Typography>
