@@ -172,7 +172,7 @@ function App() {
                 
                 
                 <Stack direction="row" spacing={2} mt={2}>
-                <a href="https://acrobat.adobe.com/id/urn:aaid:sc:eu:c6d90c0d-bb58-4231-84f7-228c35b62f96">
+                <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:66a05d8b-6fdd-44ca-97fe-44b096b532ff">
                 <Box><Button variant="contained" >resume</Button></Box>
                 </a>
                   
@@ -480,7 +480,7 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
          }}>
 
            <img src='/css3image.png' alt='logo' className='image_skill'/>
-           <Typography >CSS3</Typography>
+           <Typography >Css3</Typography>
 
          </Box>
 
@@ -555,6 +555,41 @@ Today, I continue my adventure by exploring new ideas, refining my skills and cr
 
            <img src='/wordpress.png' alt='logo' className='image_skill'/>
            <Typography >Wordpress</Typography>
+
+         </Box>
+
+
+         <Box mt={2} sx={{
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            transition:"1s",
+            borderRadius:"15PX",
+            height:"90px",
+            width:"80px",
+            textAlign:"center",
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",            
+            },
+         }}>
+
+           <img src='/canva.jpeg' alt='logo' className='image_skill'/>
+           <Typography >Canva</Typography>
+
+         </Box>
+
+         <Box mt={2} sx={{
+            border:"0.5px solid rgba(211, 211, 211, 0.671)",
+            transition:"1s",
+            borderRadius:"15PX",
+            height:"90px",
+            width:"80px",
+            textAlign:"center",
+            '&:hover': {
+              boxShadow:"0px 0px 15px 0px rgb(177, 175, 175)",            
+            },
+         }}>
+
+           <img src='/electron.jpg' alt='logo' className='image_skill'/>
+           <Typography >ElectronJS</Typography>
 
          </Box>
           
